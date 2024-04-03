@@ -3,6 +3,9 @@ body {
     height: 100%;
     overflow: hidden;
 }
+header {
+    height: 10%;
+}
 .navigation {
     width: 100%;
     display: flex;
@@ -28,4 +31,27 @@ body {
 .map {
     height: 100%;
     width: 100%;
+}
+
+.propeties-container {
+    background-color: white;
+    position: fixed;
+    right:20px;
+    top:10%;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.propeties-block {
+    background-color: #a1c8de84;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    min-height: 20px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.propeties-block img {
+    margin: 5px;
 }
