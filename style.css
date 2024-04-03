@@ -9,6 +9,9 @@
 
 .search-field {
     background-color: #EDEEF0;
+    background-image: url("img/search-img.svg");
+    background-repeat: no-repeat;
+    background-position: 10px;
     width: 330px;
     height: 32px;
     padding: 0 0 0 34px;
