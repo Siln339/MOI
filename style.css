@@ -20,8 +20,8 @@ header {
     background-image: url("img/search-icon.svg");
     background-repeat: no-repeat;
     background-position: 10px;
-    width: 330px;
-    height: 32px;
+    width: 500px;
+    height: 40px;
     padding: 0 0 0 34px;
     border-width: 0;
     outline-width: 0;
@@ -44,14 +44,28 @@ header {
 
 .propeties-block {
     background-color: #a1c8de84;
-    border-radius: 5px;
+    border-radius: 7px;
     width: auto;
     height: auto;
-    min-height: 20px;
-    margin: 10px;
-    padding: 5px;
+    min-height: 30px;
+    margin: 14px;
+    padding: 7px;
 }
 
 .propeties-block img {
     margin: 5px;
+}
+
+.h1{
+    font-family: "EB Garamond", Arial, sans-serif;
+    margin: 18px 50px 18px 20px;
+    color: #EDEEF0;
+    font-size: 32px;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.logotype{
+    width: 45px;
+    height: 45px;
+    margin: 0px 10px 0px 0px;
 }
