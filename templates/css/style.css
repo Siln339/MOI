@@ -17,7 +17,7 @@ header {
 
 .search-field {
     background-color: #EDEEF0;
-    background-image: url("img/search-icon.svg");
+    background-image: url("../img/search-icon.svg");
     background-repeat: no-repeat;
     background-position: 10px;
     width: 500px;
