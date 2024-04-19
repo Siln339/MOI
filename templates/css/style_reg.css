@@ -1,5 +1,5 @@
 body {
-    background-image: url("../img/back-reg.jpg");
+    background-image: url("../img/back-reg.svg");
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -9,27 +9,34 @@ body {
     width:500px;
     height:730px;
     padding: 10px;
-    background:rgba(255, 255, 255, 0.705);
+    background:rgba(255, 255, 255, 0.900);
     margin: auto;
     margin-top: 5%;
-    border-radius: 14px;
+    border-radius: 22px;
 }
 
 .input-field {
-    margin: 5px;
+    display: block;
+    margin: auto;
+    padding: 0;
     background-color: #F0F0F0;
-    width: 100%;
-    height: 60px;
+    width: 80%;
+    height: 80px;
     border: 0;
+    font-size: 16px;
     border-radius: 8px;
-    margin-bottom: 20px ;
+    outline-width: 0;
+    margin-bottom: 15px ;
 }
 
 .submit-field {
-    margin: 5px;
-    background-color: #4264DC;
-    width: 100%;
-    height: 60px;
+    display: block;
+    margin: auto;
+    background-color: #80AFF4;
+    color: #ffffff;
+    width: 80%;
+    font-size: 24px;
+    height: 80px;
     border: 0;
     border-radius: 8px;
 }
@@ -38,9 +45,59 @@ body {
     padding: 10px;
 }
 
-.h1 {
-    font-family: "constantia";
-    margin: 18px 50px 18px 130px;
-    color: #2f75ff;
-    font-size: 32px;
+.font {
+    font-family: 'Myanmar Khyay';
+    display: block;
+    padding: 0;
+    text-align: center;
+    color: #445C80;
+    font-size: 28px;
+}
+
+.font-1 {
+    font-family: 'Calibri';
+    display: block;
+    padding: 0;
+    margin-top: 0;
+    text-align: right;
+    margin-right: 10%;
+    color: #6E6E6E;
+    font-size: 22px;
+}
+
+.font-2 {
+    font-family: 'Calibri';
+    display: block;
+    padding: 0;
+    margin-top: 2%;
+    text-align: center;
+    color: #5e99f0;
+    font-size: 22px;
+}
+
+.font-3 {
+    font-family: 'Calibri';
+    display: block;
+    padding: 0;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+    color: #6E6E6E;
+    font-size: 16px;
+}
+
+.logo {
+    width: 18%;
+    height: 18%;
+    margin-top: -8%;
+}
+
+.head {
+    text-align: center;
+}
+
+@font-face{
+    font-family: 'Myanmar Khyay';
+    src: url(../fonts/Khyay-Regular.ttf) format("truetype");
 }
