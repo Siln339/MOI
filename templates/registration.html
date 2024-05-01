@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style_reg.css">
+    <link rel="stylesheet" href="css/style-reg.css">
     <title>Greetings</title>
 </head>
 <body>
@@ -12,16 +18,22 @@
             <div class="rectangle">
                 <div class="head">
                     <img class="logo" src="img/logo.svg" alt="Логотип">
-                    <h1 class="font">MAP OF INTEREST</h1>
+                    <h1 class="montserrat-header">Регистрация</h1>
                 </div>
-                <form method="post">
-                    <input class="input-field" placeholder="Логин" type="text" id="username" name="username">
-                    <input class="input-field" placeholder="Пароль" type="password" id="password" name="password">
-                    <a href="url" class="font-1">Забыли пароль?</a> 
-                    <input class="submit-field" type="submit" value="Войти">
-                    <a href="url" class="font-2">Создать аккаунт</a>
-                    <p class="font-3">Нажимая любую кнопку, вы принимаете условия Лицензионного соглашения. <br>Условия и цели обработки персональных данных определены в <br>Политике конфиденциальности.
-                    Политика обработки персональных данных.</p>
+                <form method="post" class="authentification-form">
+                        <label for="email" class="authentification-form-label">Почта</label>
+                        <input type="email" class="authentification-form-input" id="email" name="email">
+                        <label for="login" class="authentification-form-label">Логин</label>
+                        <input type="text" class="authentification-form-input" id="login" name="login">
+                        <label for="password" class="authentification-form-label">Пароль</label>
+                        <input type="password" class="authentification-form-input" id="password" name="password">
+                        <label for="repeat-password" class="authentification-form-label">Повторите пароль</label>
+                        <input type="password" class="authentification-form-input-last" id="repeat-password" name="repeat-password">
+                        <div class="checkbox-container">
+                            <input type="checkbox" class="checkbox-input" id="checkbox" name="accept-private-policy">
+                            <label for="checkbox" class="checkbox-label">Согласие на обработку персональных данных</label>
+                        </div>
+                        <input class="submit-field" type="submit" value="Зарегистрироваться">
                 </form>
             </div>
         </div>
