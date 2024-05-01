@@ -1,3 +1,5 @@
 from django.shortcuts import render
+from . forms import Authorization_form
 
-# Create your views here.
+def loginView(request):
+    return render(request, 'users/authorization.html')
