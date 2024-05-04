@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
+    <script src="https://api-maps.yandex.ru/v3/?apikey=9d41c8c3-eca5-4b49-9eaa-c08e88bbd00a&lang=ru_RU"></script>
 </head>
 <body>
     <header>
@@ -23,8 +24,8 @@
         </nav>
     </header>
     <main>
-        <div class="map-container">
-            <img class="map" src="img/map-placeholder.jpg" alt="Заглушка карты">  
+        <div>
+            <div id="map" style="height: 100vh"></div>
         </div>
         <div class="propeties-container">
             <div class="propeties-block">
@@ -48,5 +49,6 @@
         <div>
             <span></span>
     </footer>
+    <script src="js/map.js"></script>
 </body>
 </html>
