@@ -1,5 +1,9 @@
-from django.shortcuts import render
-from . forms import Authorization_form
+from django.contrib.auth.views import LoginView
+from django.contrib.auth.forms import AuthenticationForm
+from django.urls import reverse_lazy
 
-def loginView(request):
-    return render(request, 'users/authorization.html')
+class AuthorizationView(LoginView):
+    form_class = AuthenticationForm
+    next_page = reverse_lazy('login')
+    template_name = 'users/authorization.html'
+    title = 'Вход'
