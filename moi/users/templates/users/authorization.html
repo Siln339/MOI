@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 {% load static %}
-{% load addcss %}
 <html lang="ru">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,9 +20,9 @@
                 </div>
                 <form method="post">
                     {% csrf_token %}
-                    {{ form.username|addcss:"input-field"}}
+                    {{ form.username}}
                     {{ form.username.errors }}
-                    {{ form.password|addcss:"input-field" }}
+                    {{ form.password}}
                     {{ form.password.errors }}
                     <input class="submit-field" type="submit" value="Войти">
                     <a href="url" class="font-2">Создать аккаунт</a>
