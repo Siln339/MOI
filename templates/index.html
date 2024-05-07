@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
@@ -10,7 +13,10 @@
 <body>
     <header>
         <nav class="navigation">
-            <h1 class="h1"><img class="logotype" src="img/logo.svg" alt="логотип">Map Of Interest</h1>
+            <a href="#" class="logotype-anchor">
+                <img src="img/logo.svg" alt="logotype">
+                <h1 class="logotype-header">MAP OF INTEREST</h1>
+            </a>
         <form class="search-form">
             <input class="search-field" type="search" placeholder="Искать маршруты...">
         </form>
@@ -20,7 +26,6 @@
             <a href="#">
                 <img src="" alt="" title="">
             </a>
-        </ul>
         </nav>
     </header>
     <main>
@@ -28,20 +33,21 @@
             <div id="map" style="height: 100vh"></div>
         </div>
         <div class="propeties-container">
+            <div class="propeties-block-slider">
+                <img src="img/urfu.png" class="propeties-image-slider" alt="urfu">
+            </div>
             <div class="propeties-block">
-                <span>Сложность маршрута:</span>
+                <span class="propeties-text">Сложность маршрута:</span>
                 <br>
-                <img src="img/Icon.svg" alt="">
-                <img src="img/Icon.svg" alt="">
-                <img src="img/Icon.svg" alt="">
-                <img src="img/Icon.svg" alt="">
-                <img src="img/Icon.svg" alt="">
+                <img src="img/smiles.svg" class="propeties-images-1" alt="smiles">
+            </div>
+            <div class="propeties-block-length">
+                <span class="propeties-text">Длина:</span>
+                <img src="img/slider.svg" class="propeties-images-3" alt="slider">
             </div>
             <div class="propeties-block">
-                <span>Описание:</span>
-            </div>
-            <div class="propeties-block">
-                
+                <span class="propeties-text">Описание:</span>
+                <img src="img/lines.svg" class="propeties-images-2" alt="lines">      
             </div>
         </div>
     </main>
