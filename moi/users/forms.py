@@ -1,9 +1,11 @@
 from django import forms
 from django.contrib.auth.models import User
+from django.contrib.auth.forms import AuthenticationForm
 
-class Authorization_form(forms.Form):
-    username = forms.CharField()
-    password = forms.CharField(widget=forms.PasswordInput)
+class AuthorizationForm(AuthenticationForm):
+    username = forms.CharField(widget=forms.TextInput(attrs={'class':'input-field', 'placeholder':'Логин'}))
+    password = forms.CharField(widget=forms.PasswordInput(attrs={'class':'input-field', 'placeholder':'Пароль'}))
+
 
 class Registration_form(forms.ModelForm):
     password = forms.CharField(label='Пароль', widget=forms.PasswordInput)
