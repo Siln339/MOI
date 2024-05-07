@@ -65,7 +65,12 @@ body {
     border: 0;
     border-radius: 8px;
     margin-top: 5%;
-    
+    box-shadow: 4px 10px 12px 0px rgba(34, 60, 80, 0.2);
+}
+
+.submit-field:hover {
+    background-color: #4285e9;
+    cursor: pointer;
 }
 
 .checkbox-input {
@@ -109,8 +114,8 @@ h1 {
 .montserrat-header {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
-    font-size: 30px;
+    font-weight: 550;
+    font-size: 32px;
     font-style: normal;
 }
  

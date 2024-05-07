@@ -12,7 +12,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #86BBD8;
+    background-color: #80AFF4;
 }
 
 .search-field {
@@ -28,7 +28,7 @@ header {
     border-radius: 8px;
 }
 
-.map {
+.yandex-map {
     height: 100%;
     width: 100%;
 }
@@ -69,4 +69,3 @@ header {
     height: 45px;
     margin: 0px 10px 0px 0px;
 }
-
