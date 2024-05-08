@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "main/css/style.css" %}">
+    <title>Home</title>
+    <script src="https://api-maps.yandex.ru/v3/?apikey=9d41c8c3-eca5-4b49-9eaa-c08e88bbd00a&lang=ru_RU"></script>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#" class="logotype-anchor">
+                <img src="{% static "img/logo.svg" %}" alt="logotype">
+                <h1 class="logotype-header">MAP OF INTEREST</h1>
+            </a>
+        <form class="search-form">
+            <input class="search-field" type="search" placeholder="Искать маршруты...">
+        </form>
+            <a href="#">
+                <img src="" alt="" title="">
+            </a>
+            <a href="#">
+                <img src="" alt="" title="">
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <div id="map" style="height: 100vh"></div>
+        </div>
+        <div class="propeties-container">
+            <div class="propeties-block-slider">
+                <img src="{% static "main/img/urfu.png" %}" class="propeties-image-slider" alt="urfu">
+            </div>
+            <div class="propeties-block">
+                <span class="propeties-text">Сложность маршрута:</span>
+                <br>
+                <img src="{% static "main/img/smiles.svg" %}" class="propeties-images-1" alt="smiles">
+            </div>
+            <div class="propeties-block-length">
+                <span class="propeties-text">Длина:</span>
+                <img src="{% static "main/img/slider.svg" %}" class="propeties-images-3" alt="slider">
+            </div>
+            <div class="propeties-block">
+                <span class="propeties-text">Описание:</span>
+                <img src="{% static "main/img/lines.svg" %}" class="propeties-images-2" alt="lines">      
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <span></span>
+    </footer>
+    <script src={% static "main/js/map.js" %}></script>
+</body>
+</html>
