@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "users/css/style-reg.css" %}">
+    <title>{{view.title}}</title>
+</head>
+<body>
+    <main>
+        <div class="form-container">
+            <div class="rectangle">
+                <div class="head">
+                    <img class="logo" src="{% static "users/img/logo.svg" %}" alt="Логотип">
+                    <h1 class="montserrat-header">{{view.title}}</h1>
+                </div>
+                <form method="post" class="authentification-form">
+                        {% csrf_token %}
+                        {% print((form)) %}
+                        {% for field in form %}
+                            <label class="authentification-form-label" for="{{ field.auto_id }}">{{ field.label }}</label>
+                            {{ field }}
+                        {% endfor %}
+                        {% comment %} <div class="checkbox-container">
+                            <input type="checkbox" class="checkbox-input" id="checkbox" name="accept-private-policy">
+                            <label for="checkbox" class="checkbox-label">Согласие на обработку персональных данных</label>
+                        </div> {% endcomment %}
+                        <input class="submit-field" type="submit" value="Зарегистрироваться">
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

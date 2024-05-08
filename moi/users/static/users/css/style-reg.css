@@ -1,0 +1,128 @@
+body {
+    /* Исправить */
+    background-image: url("../../../static/users/img/auth-back.svg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.rectangle {
+    width:500px;
+    height:730px;
+    padding: 10px;
+    background:rgba(255, 255, 255, 0.900);
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 22px;
+}
+
+.authentification-form-input {
+    display: block;
+    margin: auto;
+    background-color: #F0F0F0;
+    width: 80%;
+    height: 55px;
+    border: 0;
+    outline-width: 0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding-left: 18px;
+    font-size: 18px;  
+}
+
+.authentification-form-input-last {
+    display: block;
+    margin: auto;
+    background-color: #F0F0F0;
+    width: 80%;
+    height: 55px;
+    border: 0;
+    outline-width: 0;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    padding-left: 18px;
+    font-size: 18px;  
+}
+
+.authentification-form-label {
+    margin-left: 10%;
+    color: #445C80;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    padding-bottom: 0,7%;
+}
+
+.submit-field {
+    display: block;
+    margin: auto;
+    background-color: #80AFF4;
+    color: #ffffff;
+    width: 80%;
+    font-size: 24px;
+    height: 80px;
+    border: 0;
+    border-radius: 8px;
+    margin-top: 5%;
+    box-shadow: 4px 10px 12px 0px rgba(34, 60, 80, 0.2);
+}
+
+.submit-field:hover {
+    background-color: #4285e9;
+    cursor: pointer;
+}
+
+.checkbox-input {
+    width: 28px;
+    height: 28px;
+    border: 6px;
+    display: block;
+    margin-left: 10%;
+}
+
+.checkbox-label {
+    color: #445C80;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    vertical-align: super;
+}
+
+.checkbox-container {
+    display: block;
+    margin-left: 10%;
+}
+
+h1 {
+    display: block;
+    padding: 0;
+    text-align: center;
+    color: #445C80;
+    font-size: 28px;
+}
+
+.logo {
+    width: 18%;
+    height: 18%;
+    margin-top: -8%;
+}
+
+.head {
+    text-align: center;
+}
+
+.montserrat-header {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-size: 32px;
+    font-style: normal;
+}
+ 
+@font-face{
+    font-family: 'Myanmar Khyay';
+    src: url(../fonts/Khyay-Regular.ttf) format("truetype");
+}
