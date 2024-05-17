@@ -27,6 +27,15 @@
             <a href="#">
                 <img src="" alt="" title="">
             </a>
+            <div class="header-buttons">
+                {% if request.user.is_authenticated %}
+                    <a href="#" class="header-text">{{request.user.username}}</a>
+                    <a href="{% url "logout" %}" class="header-text">Выход</a>
+                {% else %}
+                    <a href="{% url "registration" %}" class="header-text">Регистрация</a>
+                    <a href="{% url "login" %}" class="header-text">Вход</a>
+                {% endif %}
+            </div>
         </nav>
     </header>
     <main>

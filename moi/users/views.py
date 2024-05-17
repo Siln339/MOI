@@ -1,4 +1,4 @@
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, authenticate, logout
 from django.shortcuts import render, redirect
 from django.contrib.auth.views import LoginView
 from .forms import AuthorizationForm, RegistrationForm
@@ -10,7 +10,7 @@ class AuthorizationView(LoginView):
     template_name = 'users/authorization.html'
     title = 'Вход'
 
-def reistration(request):
+def reistrationView(request):
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
         if form.is_valid():
@@ -23,3 +23,7 @@ def reistration(request):
     else:
         form = RegistrationForm()
     return render(request, 'users/registration.html', {'form': form, 'title':'Регистрация'})
+
+def logoutView(request):
+    logout(request)
+    return redirect('home')
