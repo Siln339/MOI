@@ -6,6 +6,23 @@ body {
 header {
     height: 10%;
 }
+
+.header-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    margin-right: 12%;
+    color: #28374d;
+}
+
+a:hover {
+    color: white;
+}
+
+.header-buttons {
+    display: flex;
+    margin-right: 2.5%;
+}
+
 .navigation {
     width: 100%;
     display: flex;
