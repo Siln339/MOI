@@ -39,17 +39,17 @@ header {
     right:20px;
     top:10%;
     width: 650px;
-    border-radius: 5px;
+    overflow-y: scroll;
+    max-height: 90%;
+    border-radius: 8px;
 }
 
 .propeties-block {
     background-color: #d7e3eb;
     border-radius: 8px;
     display: block;
-    height: auto;
-    margin: 25px;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
+    height: 250px;
+    margin: 4%;
 }
 
 .propeties-text {
