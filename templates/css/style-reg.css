@@ -74,18 +74,23 @@ body {
 }
 
 .checkbox-input {
+    display: block;
     width: 28px;
     height: 28px;
     border: 6px;
+    position: fixed;
+    margin-left: 3%;
 }
 
 .checkbox-label {
+    display: flex;
+    margin-top: 6.2%;
+    margin-left: 18%;
     color: #445C80;
     font-size: 16px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
-    vertical-align: super;
 }
 
 .checkbox-container {
