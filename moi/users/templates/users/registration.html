@@ -23,7 +23,10 @@
                 </div>
                 <form method="post" class="authentification-form">
                         {% csrf_token %}
-                        {% print((form)) %}
+                        {{ form.errors.username }}
+                        {{ form.errors.email }}
+                        {{ form.errors.password1}}
+                        {{ form.errors.password2}}
                         {% for field in form %}
                             <label class="authentification-form-label" for="{{ field.auto_id }}">{{ field.label }}</label>
                             {{ field }}
