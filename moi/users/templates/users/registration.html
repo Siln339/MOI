@@ -19,7 +19,7 @@
             <div class="rectangle">
                 <div class="head">
                     <img class="logo" src="{% static "users/img/logo.svg" %}" alt="Логотип">
-                    <h1 class="montserrat-header">{{view.title}}</h1>
+                    <h1 class="montserrat-header">{{title}}</h1>
                 </div>
                 <form method="post" class="authentification-form">
                         {% csrf_token %}

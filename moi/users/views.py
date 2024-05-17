@@ -22,4 +22,4 @@ def reistration(request):
             return redirect('home')
     else:
         form = RegistrationForm()
-    return render(request, 'users/registration.html', {'form': form})
+    return render(request, 'users/registration.html', {'form': form, 'title':'Регистрация'})
