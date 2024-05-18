@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static "users/css/style-reg.css" %}">
-    <title>{{view.title}}</title>
+    <title>{{title}}</title>
 </head>
 <body>
     <main>
@@ -19,7 +19,7 @@
             <div class="rectangle">
                 <div class="head">
                     <img class="logo" src="{% static "users/img/logo.svg" %}" alt="Логотип">
-                    <h1 class="montserrat-header">{{view.title}}</h1>
+                    <h1 class="montserrat-header">{{title}}</h1>
                 </div>
                 <form method="post" class="authentification-form">
                         {% csrf_token %}

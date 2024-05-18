@@ -15,19 +15,19 @@
         <div class="form-container">
             <div class="rectangle">
                 <div class="head">
-                    <img class="logo" src="{% static "users/img/logo.svg" %}" alt="Логотип">
+                    <img class="logo" src="{% static "users/img/logo.svg" %}" alt="logotype">
                     <h1 class="montserrat-header">MAP OF INTEREST</h1>
                 </div>
                 <form method="post">
                     {% csrf_token %}
-                    {{ form.username}}
-                    {{ form.username.errors }}
-                    {{ form.password}}
-                    {{ form.password.errors }}
+                    {{ form.non_field_errors }}
+                    {% for field in form %}
+                        <label class="authentification-form-label" for="{{ field.auto_id }}">{{ field.label }}</label>
+                        {{ field }}
+                    {% endfor %}
+                    <a href="#" class="font-1">Забыли пароль?</a> 
                     <input class="submit-field" type="submit" value="Войти">
-                    <a href="url" class="font-2">Создать аккаунт</a>
-                    <p class="font-3">Нажимая любую кнопку, вы принимаете условия Лицензионного соглашения. <br>Условия и цели обработки персональных данных определены в <br>Политике конфиденциальности.
-                    Политика обработки персональных данных.</p>
+                    <a href="{% url "registration" %}" class="font-2">Создать аккаунт</a>
                 </form>
             </div>
         </div>
