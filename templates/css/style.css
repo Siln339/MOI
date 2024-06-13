@@ -23,6 +23,10 @@ a:hover {
     margin-right: 2.5%;
 }
 
+.hidden {
+    display: none;
+}
+
 .navigation {
     width: 100%;
     display: flex;
@@ -48,21 +52,6 @@ a:hover {
     border-width: 0;
     outline-width: 0;
     border-radius: 8px;
-}
-
-.route-container {
-    background-color: #f5f5f5;
-    position: fixed;
-    right:20px;
-    top:10%;
-    width: 650px;
-    overflow-y: scroll;
-    max-height: 90%;
-    border-radius: 8px;
-}
-
-.hidden {
-    display: none;
 }
 
 .propeties-container {
@@ -139,6 +128,29 @@ a:hover {
     margin-right: auto;
 }
 
+.route-window-toggler {
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+.route-container.active {
+    right: -50%;
+    transition: right 1s;
+}
+
+.route-container {
+    background-color: #f5f5f5;
+    position: fixed;
+    right:20px;
+    top:10%;
+    width: 650px;
+    overflow-y: scroll;
+    max-height: 90%;
+    border-radius: 8px;
+    transition: right 0.9s;
+}
+
 .route {
     background-color: #d7e3eb;
     border-radius: 8px;
@@ -194,6 +206,7 @@ a:hover {
     margin-right: 2%;
     margin-bottom: 2%;
     border-radius: 8px;
+    position: relative;
 }
 
 .route-button {
@@ -239,14 +252,15 @@ a {
     margin: auto;
     background-color: #80AFF4;
     color: #ffffff;
-    width: 40%;
+    width: 35%;
     font-size: 18px;
     height: 50px;
     border: 0;
     border-radius: 8px;
     box-shadow: 4px 10px 12px 0px rgba(34, 60, 80, 0.2);
-    margin-right: inherit;
-    margin-top: 5%;
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
 }
 
 .submit-field:hover {
@@ -274,3 +288,8 @@ a {
     margin-bottom: 20px;
     border-bottom: 2px solid #BFE2FF;
 }
+
+.button-panel {
+    width: 85%;
+}
+
