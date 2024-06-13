@@ -14,6 +14,7 @@ class Profile(models.Model):
         return self.user.username
     
 class Image(models.Model):
+    alt = models.CharField(max_length=30)
     path = models.ImageField(upload_to='route_images/general/')
 
 class Type(models.Model):
