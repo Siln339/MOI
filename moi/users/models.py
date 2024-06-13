@@ -17,8 +17,13 @@ class Image(models.Model):
     alt = models.CharField(max_length=30)
     path = models.ImageField(upload_to='route_images/general/')
 
+    def __str__(self):
+        return self.alt
+
 class Type(models.Model):
     name = models.CharField(max_length=30)
+    def __str__(self):
+        return self.name
 
 class Route(models.Model):
     name = models.CharField(max_length=40)
