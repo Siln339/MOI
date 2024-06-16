@@ -1,6 +1,4 @@
 from django.contrib import admin
-from .models import Profile, Route, Type, Image 
+from .models import Profile
 
-db_models = [Profile, Route, Type, Image]
-for model in db_models:
-    admin.site.register(model)
+admin.site.register(Profile)

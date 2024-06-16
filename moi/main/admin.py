@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Route, Type, Image
 
-# Register your models here.
+db_models = [Route, Type, Image]
+for model in db_models:
+    admin.site.register(model) 
