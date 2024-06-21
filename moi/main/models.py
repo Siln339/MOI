@@ -2,7 +2,7 @@ from django.db import models
 
 class Image(models.Model):
     alt = models.CharField(max_length=30, default="Изображение")
-    path = models.ImageField(upload_to='main/routes_files/images')
+    file = models.ImageField(upload_to='main/routes_files/images')
 
     def __str__(self):
         return str(self.id) + '-' + self.alt
@@ -25,7 +25,7 @@ class Type(models.Model):
 class Route(models.Model):
     name = models.CharField(max_length=40)
     descripion = models.TextField(max_length=1000)
-    difficult = models.PositiveIntegerField(default=1, choices=((i,i) for i in range(1, 10)))
+    difficult = models.PositiveIntegerField(default=1, choices=((i,i) for i in range(1, 11)))
     lenght = models.PositiveIntegerField()
     main_image  = models.ForeignKey(Image, on_delete=models.PROTECT, related_name='main_image')
     gpx = models.FileField(upload_to='main/routes_files/gpx/', max_length=100)
