@@ -6,10 +6,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=9d41c8c3-eca5-4b49-9eaa-c08e88bbd00a&lang=ru_RU"></script>
     <script src="js/map.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
@@ -49,21 +51,47 @@
             </div>
         </body>
         <div class="propeties-container">
+            <button class="route-arrow-container">
+                <img src="img/arrow.svg" class="route-arrow-button" alt="arrow">
+            </button>
+            <h1 class="propeties-text-header">Вокруг реки Исеть</h1>
             <div class="propeties-block-slider">
-                <img src="img/urfu.png" class="propeties-image-slider" alt="urfu">
+
+                <img src="img/arrow-left.svg" class="swiper-button-prev" alt="arrow-left">
+
+                <div class="swiper">
+
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <img src="img/1.JPG" class="swiper-slide" alt="1">
+                        <img src="img/2.JPG" class="swiper-slide" alt="2">
+                        <img src="img/3.JPG" class="swiper-slide" alt="3">
+                        <img src="img/4.JPG" class="swiper-slide" alt="4">
+                    </div>
+                  
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+
+                <img src="img/arrow-right.svg" class="swiper-button-next" alt="arrow-right">
+
             </div>
-            <div class="propeties-block">
-                <span class="propeties-text">Сложность маршрута:</span>
-                <br>
-                <img src="img/smiles.svg" class="propeties-images-1" alt="smiles">
-            </div>
-            <div class="propeties-block-length">
-                <span class="propeties-text">Длина:</span>
-                <img src="img/slider.svg" class="propeties-images-3" alt="slider">
-            </div>
-            <div class="propeties-block">
+            <img src="img/difficult.svg" class="propeties-block-difficult" alt="difficult">
+
+            <img src="img/information.svg" class="propeties-block-information" alt="informaton">
+
+            <div class="propeties-block-description">
                 <span class="propeties-text">Описание:</span>
-                <img src="img/lines.svg" class="propeties-images-2" alt="lines">      
+                <p class="properties-text-description">История города Екатеринбурга ведет отсчет с 1723 года, когда на реке Исети был основан завод-крепость, именно вокруг этой красивой реки проходит данный маршрут. 
+                    На нем вы увидите прекрасные сады  возле главного здания Свердловской ЖД, прокатитесь по паркам УрГУПС’а и 22 партсъезда с шикарными видами, 
+                    посмотрите здания правительства области и администрации города Екатеринбург, полюбуетесь видами на набережной, заедете к памятнику человека, 
+                    в честь которого был назван Екатеринбург в Советское время, а также почувствуете дух «меховой» улицы нашего города.
+                </p>    
+            </div>
+            <div class="propeties-block-description">
+                <span class="propeties-text">Тип маршрута: Городской</span>
+                <a href="https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/flTT2Nh97Oz7ug" class="propeties-text">Ссылка на скачивание .gpx</a>
             </div>
         </div>
         <div class="route-container">
