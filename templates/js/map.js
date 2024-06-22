@@ -21,24 +21,4 @@ function init() {
     });
 }
 
-function renderPlacemark(response) {
-    myGeoObject = new ymaps.GeoObject({
-        // Описание геометрии.
-        geometry: {
-            type: "Point",
-            coordinates: [response.latitude, response.longitude]
-        },
-        // Свойства.
-        properties: {
-            // Контент метки.
-            iconContent: response.name,
-            hintContent: response.description
-        }
-    }, {
-        // Опции.
-        // Иконка метки будет растягиваться под размер ее содержимого.
-        preset: 'islands#blackStretchyIcon',
-        // Метку можно перемещать.
-        draggable: false
-    });
-}
+

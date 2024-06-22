@@ -20,11 +20,8 @@ function loadRoute(routeid, response = false) {
     // }
 
     // Заполняем блок маршрута на основе данных, полученных в переменной response.
-
-    // renderPlacemark(response);
-
+    
    // Закрываем страницу с маршрутом.
-
    swapContainer();
 }
 
@@ -36,6 +33,10 @@ function swapContainer() {
         setTimeout(() => { route_container.classList.remove('fade-out'); }, 50);
         route_container.classList.remove('active');
     });
+}
+
+function fillRouteBlock(response) {
+    document.querySelector(response).src = "img/urfu.png";
 }
 
 // function getRouteData {
